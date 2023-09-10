@@ -47,12 +47,12 @@ async def start(event):
         await event.reply(
             PM_START_TEXT.format(event.sender.first_name),
             buttons = [
-    [Button.url("Add To Your Guild", "https://t.me/KiritoXProBot?startgroup=true")],
+    [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/KiritoXProBot?startgroup=true")],
     [
         Button.inline("Terms And Conditions", data="tc"),
-        Button.url("Error Report", "https://t.me/ProgrammerSupport"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/TSO_CHATS"),
     ],
-    [Button.inline("System Call", data="help")],
+    [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
 ],
            )
 
@@ -79,18 +79,18 @@ tc = """
            
 @swordinline(pattern="tc")
 async def t_c(e):
-    buttons = Button.inline("Back", data="back")
+    buttons = Button.inline("ʙᴀᴄᴋ", data="back")
     await e.edit(tc, buttons=buttons, link_preview=False)
 
-@swordinline(pattern=r"back")
+@swordinline(pattern=r"ʙᴀᴄᴋ")
 async def _(event):
     btn = [
-    [Button.url("Add To Your Guild", "https://t.me/KiritoXProBot?startgroup=true")],
+    [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/KiritoXProBot?startgroup=true")],
     [
         Button.inline("Terms And Conditions", data="tc"),
-        Button.url("Error Report", "https://t.me/ProgrammerSupport"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/tso_chats"),
     ],
-    [Button.inline("System Call", data="help")],
+    [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
 ]
 
     await event.edit(PM_START_TEXT.format(event.sender.first_name), buttons=btn)
