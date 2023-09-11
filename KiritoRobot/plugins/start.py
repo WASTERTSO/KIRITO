@@ -47,10 +47,10 @@ async def start(event):
         await event.reply(
             PM_START_TEXT.format(event.sender.first_name),
             buttons = [
-    [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/KiritoXProBot?startgroup=true")],
+    [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/GOKU_GODXBOT?startgroup=true")],
     [
-        Button.url("Terms And Conditions", "https://t.me/godx_bots"),
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/TSO_CHATS"),
+        Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/GODX_BOTS"),
     ],
     [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
 ],
@@ -87,8 +87,8 @@ async def _(event):
     btn = [
     [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/KiritoXProBot?startgroup=true")],
     [
-        Button.inline("Terms And Conditions", data="tc"),
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/tso_chats"),
+        Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/godx_bots"),
     ],
     [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
 ]
