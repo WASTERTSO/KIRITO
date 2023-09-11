@@ -49,7 +49,7 @@ async def start(event):
             buttons = [
     [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/KiritoXProBot?startgroup=true")],
     [
-        Button.inline("Terms And Conditions", data="tc"),
+        Button.url("Terms And Conditions", "https://t.me/godx_bots"),
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/TSO_CHATS"),
     ],
     [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
