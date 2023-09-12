@@ -33,9 +33,8 @@ from KiritoRobot.utils import swordinline
 
 PM_START_TEXT = """
 ────「 [ɢᴏᴋᴜ](ttps://telegra.ph/file/36dd96df77bc2b7ef9b3d.png)」────
-**ʜᴇʏ {},🥀
+**ʜᴇʏ {}, 🥀
 ɪ'ᴍ ɢᴏᴋᴜ ᴀ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs**
-
 
 ───────────────────────────
 ʜɪᴛ /mstart ғᴏʀ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ♪
