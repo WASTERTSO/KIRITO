@@ -21,7 +21,7 @@ async def start(event):
         await event.reply(
             PM_START_TEXT.format(event.sender.first_name),
             buttons = [
-    [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+    [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/Tso_Godbot?startgroup=true")],
     [
         Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "https://t.me/ABOUT_YOUR_SHIV"),
         Button.url("♪ ᴍᴜsɪᴄ ♪", "https://t.me/GODX_BOTS"),
