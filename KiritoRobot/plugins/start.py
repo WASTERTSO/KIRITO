@@ -1,35 +1,18 @@
-from telethon import Button, events
-
-from KiritoRobot import tbot
-from KiritoRobot.utils import swordinline
-
-PM_START_TEXT = """
-┏━━━━━━━━━━━━━━━━━━━━━━━
-┃ *ʜᴇʟʟᴏ*🥀 {},
- ⦾
-┃ *ɪ'ᴍ ᴛsᴏ ɢᴏᴅ ʙᴏᴛ
-┗━━━━━━━━━━━━━━━━━━━━━━━
-*ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴡsᴏᴍᴇ ᴀɴᴅ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs ♪ [ɴᴏ ᴀᴅs]*
-━━━━━━━━━━━━━━━━━━━━━━━━
-"""
-
-
 @tbot.on(events.NewMessage(pattern="^/start(@TSO_GODBOT)?$"))
 async def start(event):
-
     if event.is_private:
         await event.reply(
-            PM_START_TEXT.format(event.sender.first_name),
+            PM_START_TEXT.format(event.sender.first_name), 
             buttons = [
-    [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/Tso_Godbot?startgroup=true")],
-    [
-        Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "https://t.me/ABOUT_YOUR_SHIV"),
-        Button.url("♪ ᴍᴜsɪᴄ ♪", "https://t.me/GODX_BOTS"),
-    ],
-    [Button.inline("⛩ ᴄᴏᴍᴍᴀɴᴅs ⛩", data="help")],
-],
-           )
-
+                [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"(link unavailable)")],
+                [ 
+                    Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "(link unavailable)"), 
+                    Button.url("♪ ᴍᴜsɪᴄ ♪", "(link unavailable)"),
+                ],
+                [Button.inline("⛩ ᴄᴏᴍᴍᴀɴᴅs ⛩", data="help")],
+            ],
+            mention=False  # Yeh line add karein
+        )
         return
 
     if event.is_group:
