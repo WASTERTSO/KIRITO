@@ -23,7 +23,7 @@ async def start(event):
                 [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/Tso_Godbot?startgroup=true")],
                 [ 
                     Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "https://t.me/ABOUT_YOUR_SHIV"), 
-                    Button.url("♪ ᴍᴜsɪᴄ ♪", "(),
+                    Button.url("♪ ᴍᴜsɪᴄ ♪", "https://t.me/GODX_BOTS),
                 ],
                 [Button.inline("⛩ ᴄᴏᴍᴍᴀɴᴅs ⛩", data="help")],
             ],
