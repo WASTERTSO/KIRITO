@@ -1,13 +1,29 @@
+from telethon import Button, events
+
+from KiritoRobot import tbot
+from KiritoRobot.utils import swordinline
+
+PM_START_TEXT = """
+┏━━━━━━━━━━━━━━━━━━━━━━━
+┃ *ʜᴇʟʟᴏ*🥀 {},
+ ⦾
+┃ *ɪ'ᴍ ᴛsᴏ ɢᴏᴅ ʙᴏᴛ
+┗━━━━━━━━━━━━━━━━━━━━━━━
+*ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴡsᴏᴍᴇ ᴀɴᴅ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs ♪ [ɴᴏ ᴀᴅs]*
+━━━━━━━━━━━━━━━━━━━━━━━━
+"""
+
+
 @tbot.on(events.NewMessage(pattern="^/start(@TSO_GODBOT)?$"))
 async def start(event):
     if event.is_private:
         await event.reply(
             PM_START_TEXT.format(event.sender.first_name), 
             buttons = [
-                [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"(link unavailable)")],
+                [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/Tso_Godbot?startgroup=true")],
                 [ 
-                    Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "(link unavailable)"), 
-                    Button.url("♪ ᴍᴜsɪᴄ ♪", "(link unavailable)"),
+                    Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "https://t.me/ABOUT_YOUR_SHIV"), 
+                    Button.url("♪ ᴍᴜsɪᴄ ♪", "(),
                 ],
                 [Button.inline("⛩ ᴄᴏᴍᴍᴀɴᴅs ⛩", data="help")],
             ],
@@ -25,8 +41,8 @@ tc = """
 Aʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /*
 
 
-**𝐒𝐞𝐫𝐯𝐞𝐫 𝐂𝐫𝐞𝐚𝐭𝐨𝐫:** [𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ](t.me/Its_IZ_Me_Prince_xd)
-**404 𝑹𝒆𝒑𝒐𝒓𝒕:** [𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ](t.me/ProgrammerSupport)
+𝐒𝐞𝐫𝐯𝐞𝐫 𝐂𝐫𝐞𝐚𝐭𝐨𝐫: [𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ](t.me/Its_IZ_Me_Prince_xd)
+404 𝑹𝒆𝒑𝒐𝒓𝒕: [𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ](t.me/ProgrammerSupport)
 """
 
            
