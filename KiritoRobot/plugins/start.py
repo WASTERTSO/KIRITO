@@ -7,26 +7,26 @@ PM_START_TEXT = """
 ┏━━━━━━━━━━━━━━━━━━━━━━━
 ┃ *ʜᴇʟʟᴏ*🥀 {},
  ⦾
-┃ *ᴛʜɪs ɪs* {} !
+┃ *ɪ'ᴍ ᴛsᴏ ɢᴏᴅ ʙᴏᴛ
 ┗━━━━━━━━━━━━━━━━━━━━━━━
-*I'ᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴡsᴏᴍᴇ ᴀɴᴅ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs ♪ [ɴᴏ ᴀᴅs]*
+*ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴡsᴏᴍᴇ ᴀɴᴅ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs ♪ [ɴᴏ ᴀᴅs]*
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
 
-@tbot.on(events.NewMessage(pattern="^/start(@KiritoXProBot)?$"))
+@tbot.on(events.NewMessage(pattern="^/start(@TSO_GODBOT)?$"))
 async def start(event):
 
     if event.is_private:
         await event.reply(
             PM_START_TEXT.format(event.sender.first_name),
             buttons = [
-    [Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", "https://t.me/GOKU_GODXBOT?startgroup=true")],
+    [Button.url("✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✨", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
     [
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/TSO_CHATS"),
-        Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/GODX_BOTS"),
+        Button.url("🥀 ᴏᴡɴᴇʀ 🥀", "https://t.me/ABOUT_YOUR_SHIV"),
+        Button.url("♪ ᴍᴜsɪᴄ ♪", "https://t.me/GODX_BOTS"),
     ],
-    [Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help")],
+    [Button.inline("⛩ ᴄᴏᴍᴍᴀɴᴅs ⛩", data="help")],
 ],
            )
 
